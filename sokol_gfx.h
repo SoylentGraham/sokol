@@ -6042,7 +6042,7 @@ _SOKOL_PRIVATE sg_resource_state _sg_gl_create_pipeline(_sg_pipeline_t* pip, _sg
             else {
                 gl_attr->divisor = (int8_t) step_rate;
             }
-            SOKOL_ASSERT(l_desc->stride > 0);
+           // SOKOL_ASSERT(l_desc->stride > 0);
             gl_attr->stride = (uint8_t) l_desc->stride;
             gl_attr->offset = a_desc->offset;
             gl_attr->size = (uint8_t) _sg_gl_vertexformat_size(a_desc->format);
@@ -13744,7 +13744,7 @@ _SOKOL_PRIVATE sg_pipeline_desc _sg_pipeline_desc_defaults(const sg_pipeline_des
     for (int buf_index = 0; buf_index < SG_MAX_SHADERSTAGE_BUFFERS; buf_index++) {
         sg_buffer_layout_desc* l_desc = &def.layout.buffers[buf_index];
         if (l_desc->stride == 0) {
-            l_desc->stride = auto_offset[buf_index];
+          //  l_desc->stride = auto_offset[buf_index];
         }
     }
 

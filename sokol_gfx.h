@@ -666,7 +666,7 @@ enum {
     SG_MAX_SHADERSTAGE_BUFFERS = 8,
     SG_MAX_SHADERSTAGE_IMAGES = 12,
     SG_MAX_SHADERSTAGE_UBS = 4,
-    SG_MAX_UB_MEMBERS = 16,
+    SG_MAX_UB_MEMBERS = 1024,
     SG_MAX_VERTEX_ATTRIBUTES = 16,      /* NOTE: actual max vertex attrs can be less on GLES2, see sg_limits! */
     SG_MAX_MIPMAPS = 16,
     SG_MAX_TEXTUREARRAY_LAYERS = 128
